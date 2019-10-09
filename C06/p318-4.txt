@@ -1,0 +1,21 @@
+#include<stdio.h>
+int discount_price(int a,int b) {
+	
+	b = (1 - (0.01 * a)) * b;
+	return b;
+}
+int main(void) {
+	int a, b;
+
+	printf("할인율(%%)? ");
+	scanf_s("%d", &a);
+
+	for (;;) {
+		printf("제품의 가격? ");
+		scanf_s("%d", &b);
+		printf("할인가: %d원\n", discount_price(a, b));
+		if (b == 0) {
+			break;
+		}
+	}
+}

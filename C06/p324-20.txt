@@ -1,0 +1,32 @@
+#include<stdio.h>
+int electric_charge(unsigned int kwh) {
+	float a = 0, b = 0;
+	
+	if (kwh < 201) {
+		a = 910;
+		b = 93.3 * kwh;
+	}
+	if (200 < kwh < 401) {
+		a = 1600;
+		b = 187.9 * (kwh - 200) + (200 * 93.3);
+	}
+	if (400 < kwh) {
+		a = 7300;
+		b = 280.6 * (kwh - 400) + (200 * 93.3) + (200 * 187.9);
+	}
+	printf("전기 요금 합계: %.0f원\n", a + b);
+
+	return a + b;
+}
+int main(void) {
+	unsigned int kwh;
+	
+	for (;;) {
+		printf("월 사용량 (kwh)? ");
+		scanf_s("%d", &kwh);
+
+		if (electric_charge(kwh) <= 0) {
+			break;
+		}
+	}
+}

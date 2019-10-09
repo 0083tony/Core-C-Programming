@@ -1,0 +1,20 @@
+#define _CRT_SECURE_NO_WARNINGS 
+#include<stdio.h>
+#include<stdlib.h>
+#include<string.h>
+#include<ctype.h>
+#include<time.h>
+#define MAX 256
+int main(void) {
+	srand((unsigned int)time(0));
+	char tip[3][MAX] = {
+		"Live Photo의 스틸 이미지를 변경할 수 있습니다.",
+		"스크린 타임에서 iPhone의 하루 사용 시간을 확인할 수 있습니다.",
+		"C는 너무 재미가 없어요..빨리 Python 탈출합시다."
+	};
+	printf("엔터키를 누를 때마다 사용 팁을 보여줍니다.\n");
+	while (getchar() != EOF) {
+		int a = rand() % 3;
+		printf("%s\n", tip[a]);
+	}
+}

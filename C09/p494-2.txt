@@ -1,0 +1,24 @@
+#include<stdio.h>
+#include<string.h>
+#include<ctype.h>
+void remove_space(char* str) {
+	char* pstr = str;
+
+	while (*str != 0) {
+		if (*str != ' ') {
+			if (pstr != str)
+				* pstr = *str;
+			pstr++;
+		}
+		str++;
+	}
+	*pstr = 0;
+}
+int main(void) {
+	char str[256];
+
+	printf("문자열? ");
+	scanf_s("%[^\n]s", str, 256);
+	remove_space(str);
+	printf("공백 문자 제거후: %s", str);
+}

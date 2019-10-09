@@ -1,0 +1,19 @@
+#include<stdio.h>
+void get_rect_info(int *a, int *b) {
+	int area, girth;
+
+	area = (*a) * (*b);
+	girth = (*a + *b) * 2;
+
+	printf("넓이: %d, 둘레: %d", area, girth);
+}
+int main(void) {
+	int a, b;
+
+	printf("가로? ");
+	scanf_s("%d", &a);
+	printf("세로? ");
+	scanf_s("%d", &b);
+
+	get_rect_info(&a, &b);
+}

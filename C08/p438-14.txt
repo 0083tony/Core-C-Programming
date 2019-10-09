@@ -1,0 +1,22 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<time.h>
+void rand_array(int *arr) {
+	for (int i = 0; i < 10; i++) {
+		arr[i] = rand() % 100;
+	}
+}
+int main(void) {
+	srand(time(NULL));
+	int arr[10];
+	int count = rand() % 10;
+	
+	printf("count = %d\n", count);
+	for (int i = 0; i < count; i++) {
+		rand_array(arr);
+		for (int j = 0; j < 10; j++) {
+			printf("%4d", arr[j]);
+		}
+		printf("\n");
+	}
+}

@@ -1,0 +1,13 @@
+#include<stdio.h>
+int main()
+{
+	float x, y;
+
+	printf("½Ç¼ö 2°³?");
+	scanf_s("%f %f", &x, &y);
+
+	printf("%f + %f = %f\n", x, y, x + y);
+	printf("%f - %f = %f\n", x, y, x - y);
+
+	return 0;
+}

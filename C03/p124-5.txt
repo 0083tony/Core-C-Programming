@@ -1,0 +1,9 @@
+#include<stdio.h>
+int main(void) {
+	float a;
+
+	printf("±Ê¿Ã(inch)? ");
+	scanf_s("%f", &a);
+
+	printf("%f inch = %f cm", a, 2.54 * a);
+}

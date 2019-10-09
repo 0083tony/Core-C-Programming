@@ -1,0 +1,15 @@
+#include<stdio.h>
+int main(void) {
+	float a;
+	char b;
+
+	printf("ณะภฬ? ");
+	scanf_s("%f %c", &a, &b, 20);
+
+	if (b == 'm') {
+		printf("%.2f มฆฐ๖นฬลอ == %.2f ฦ๒ ", a, 0.3025 * a);
+	}
+	else {
+		printf("%.2f ฦ๒ ==> %.2f มฆฐ๖นฬลอ ", a, 3.305785 * a);
+	}
+}

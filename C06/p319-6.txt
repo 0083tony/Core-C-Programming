@@ -1,0 +1,26 @@
+#include<stdio.h>
+int choose_menu(int a) {
+	
+		if (a == 1) {
+			printf("파일 열기를 수행합니다.\n");
+		}
+		if (a == 2) {
+			printf("파일 저장을 수행합니다.\n");
+		}
+		if (a == 3) {
+			printf("인쇄를 수행합니다.\n");
+		}
+		return 0;
+}
+int main(void) {
+	int a;
+	
+	for (;;) {
+		printf("[1. 파일 열기  2.파일 저장  3.인쇄  0.종료] ");
+		scanf_s("%d", &a);
+		choose_menu(a); 
+		if (a == 0) {
+			break;
+		}
+	}
+}

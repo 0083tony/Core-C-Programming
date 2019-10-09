@@ -1,0 +1,49 @@
+#include<stdio.h>
+int Re(int n) { // 16진수의 자릿수를 리턴
+	int i = 0;
+	while (1) {
+		if (n != 0) {
+			i++;
+			n = n / 16;
+		}
+		else
+			break;
+	}
+	return i;
+}
+void prtBin(int n) { // 2진수를 출력
+	int i = 9;
+	int a = 1;
+	
+	for (i; i >= 0; i--) {
+		if (n & (a << i))
+			printf("1");
+		else
+			printf("0");
+	}
+}
+void prtBCD(int n) { // BCD코드 출력
+	int l, i;
+	int a = 1;
+	int b;
+
+	l = Re(n);
+
+	for (i = 1; i < l; i++) {
+		a *= 16;
+	}
+	for (i = 1; i <= l; i++) {
+		b = n / a;
+		prtBin(b);
+		printf("   ");
+		n = n - b * a;
+		a /= 16;
+	}
+}
+int main(void) {
+	int n;
+	printf("정수? ");
+	scanf_s("%x", &n);
+	
+	prtBCD(n);
+}

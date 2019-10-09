@@ -1,0 +1,13 @@
+#include<stdio.h>
+int main(void) {
+	int a, b, c;
+
+	printf("한 변의 길이 ?");
+	scanf_s("%d", &a);
+
+	b = a * a;
+	c = 4 * a;
+
+	printf("정사각형의 넓이: %d\n", b);
+	printf("정사각형의 둘레:%d ", c);
+}

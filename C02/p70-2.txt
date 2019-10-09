@@ -1,0 +1,17 @@
+#include <stdio.h>
+int main()
+{
+	char name[20];
+	float x; 
+
+	printf("이름: ");
+	scanf_s("%s", name, 20);
+
+	printf("학점: ");
+	scanf_s("%f", &x);
+
+
+	printf("%s의 학점은 %f입니다.\n", name, x);
+
+	return 0;
+}

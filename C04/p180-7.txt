@@ -1,0 +1,12 @@
+#include<math.h>
+#include<stdio.h>
+int main(void) {
+	float a, b;
+
+	printf("및변? ");
+	scanf_s("%f", &a);
+	printf("높이? ");
+	scanf_s("%f", &b);
+
+	printf("빗변의 길이: %f", sqrt(a * a + b * b));
+}

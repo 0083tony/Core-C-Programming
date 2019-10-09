@@ -1,0 +1,11 @@
+#include<stdio.h>
+int main(void) {
+	float a, b;
+
+	printf("용매(g)? ");
+	scanf_s("%f", &a);
+	printf("용질(g)? ");
+	scanf_s("%f", &b);
+
+	printf("농도: %.2f %%", b / (a + b) * 100);
+}

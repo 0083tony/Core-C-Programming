@@ -1,0 +1,9 @@
+#include<stdio.h>
+int main(void) {
+	float a;
+
+	printf("½Ç¼ö? ");
+	scanf_s("%f", &a);
+	printf("Á¦°ö: %e\n", a * a);
+	printf("¼¼Á¦°ö: %e\n", a * a * a);
+}

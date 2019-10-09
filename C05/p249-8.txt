@@ -1,0 +1,22 @@
+#include<stdio.h>
+int main(void) {
+	int a, b;
+	char c;
+
+	printf("비트 연산식? ");
+	scanf_s("%i %c %i", &a, &c, 20, &b);
+
+	if (c == '&') {
+		printf("%X & %X = %X", a, b, a & b);
+		return 0;
+	}
+	if (c == '|') {
+		printf("%X | %X = %X", a, b, a | b);
+		return 0;
+	}
+	if (c == '^') {
+		printf("%X ^ %X = %X", a, b, a ^ b);
+		return 0;
+	}
+	
+}

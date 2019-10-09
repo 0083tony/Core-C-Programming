@@ -1,0 +1,9 @@
+#include<stdio.h>
+int main(void) {
+	float a, b;
+	printf("KRW? ");
+	scanf_s("%f", &a);
+	printf("원/달러 환율? ");
+	scanf_s("%f", &b);
+	printf("KRW %.0f = USD %.2f", a, a / b);
+}

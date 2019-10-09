@@ -1,0 +1,12 @@
+#include<stdio.h>
+int main(void) {
+	float a, b;
+
+	printf("힘(N)? ");
+	scanf_s("%f", &a);
+	printf("높이(m)? ");
+	scanf_s("%f", &b);
+
+	printf("일의 양: %.2f J", a * b);
+
+}

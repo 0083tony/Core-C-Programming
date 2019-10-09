@@ -1,0 +1,47 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<time.h>
+void Ascending(int *arr) {
+	int temp;
+	for (int i = 0; i < 10; i++) {
+		for (int j = 0; j < 9; j++) {
+			if (arr[j] > arr[j + 1]) {
+				temp = arr[j];
+				arr[j] = arr[j + 1];
+				arr[j + 1] = temp;
+			}
+		}
+	}
+	printf("\n오름차순 정렬 후:");
+	for (int i = 0; i < 10; i++) {
+		printf("%3d", arr[i]);
+	}
+}
+void Descending(int* arr) {
+	int min;
+	for (int i = 0; i < 10; i++) {
+		for (int j = 0; j < 9; j++) {
+			if (arr[j] < arr[j + 1]) {
+				min = arr[j];
+				arr[j] = arr[j + 1];
+				arr[j + 1] = min;
+			}
+		}
+	}
+	printf("\n내림차순 정렬 후:");
+	for (int i = 0; i < 10; i++) {
+		printf("%3d", arr[i]);
+	}
+}
+int main(void) {
+	srand(time(NULL));
+	int arr[10];
+
+	printf("정렬 전:");
+	for (int i = 0; i < 10; i++) {
+		arr[i] = rand() % 100;
+		printf("%3d", arr[i]);
+	}
+	Ascending(arr);
+	Descending(arr);
+}

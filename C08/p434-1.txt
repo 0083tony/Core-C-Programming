@@ -1,0 +1,10 @@
+#include<stdio.h>
+int main(void) {
+	double arr[3];
+	double* p;
+
+	for (int i = 0; i < 3; i++) {
+		p = &arr[i];
+		printf("x[%d]ÀÇ ÁÖ¼Ò: %p\n", i, p);
+	}
+}

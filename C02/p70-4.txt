@@ -1,0 +1,16 @@
+#include<stdio.h>
+int main()
+{
+	int x, y, z;
+
+	printf("시? ");
+	scanf_s("%d", &x);
+
+	printf("분? ");
+	scanf_s("%d", &y);
+
+	printf("초? ");
+	scanf_s("%d", &z);
+
+	printf("입력한 시간은 %02d:%02d:%02d", x, y, z);
+}

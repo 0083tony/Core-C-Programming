@@ -1,0 +1,33 @@
+#include<stdio.h>
+int main(void) {
+	int n;
+	int a, b, c, d, e, f;
+
+	printf("거스름돈? ");
+	scanf_s("%d", &n);
+
+	n = n - n % 10;
+
+	printf("거스름돈 (10원미만 절사): %d\n", n);
+
+	a = n / 50000;
+	n = n % 50000;
+	b = n / 10000;
+	n = n % 10000;
+	c = n / 5000;
+	n = n % 5000;
+	d = n / 1000;
+	n = n % 1000;
+	e = n / 100;
+	n = n % 100;
+	f = n / 10;
+	n = n % 10;
+
+	printf("50000원 %d장 \n", a);
+	printf("10000원 %d장 \n", b);
+	printf(" 5000원 %d장 \n", c);
+	printf(" 1000원 %d장 \n", d);
+	printf("  100원 %d장 \n", e);
+	printf("   10원 %d장 \n", f);
+
+}

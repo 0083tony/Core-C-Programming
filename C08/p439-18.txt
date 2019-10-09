@@ -1,0 +1,24 @@
+#include<stdio.h>
+void add_to_set(int* arr, int i, int a) {
+	for (int j = 0; j <= i; j++) {
+		printf("%d ", arr[j]);
+	}
+}
+int main(void) {
+	int arr[10];
+	int a;
+
+	for (int i = 0; i < 10; i++) {
+		printf("배열에 추가할 원소? ");
+		scanf_s("%d", &a);
+		arr[i] = a;
+		for (int n = 0; n < i; n++) {
+			if (arr[n] == arr[i]) {
+				printf("\n해당 원소가 이미 [%d]에 존재합니다.\n", n);
+				i--;
+			}
+		}
+		add_to_set(arr,i, a);
+		printf("\n");
+	}
+}

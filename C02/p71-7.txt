@@ -1,0 +1,14 @@
+#include<stdio.h>
+int main()
+{
+	char ch;
+	int num;
+
+	printf("커피 사이즈 S,T,G 와 수량??");
+	scanf_s("%c %d", &ch, 10, &num);
+
+	printf("%c 사이즈 %d잔을 주문.", ch, num);
+
+	return 0;
+
+}

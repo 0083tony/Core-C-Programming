@@ -1,0 +1,22 @@
+#include<stdio.h>
+#include<string.h>
+#include<ctype.h>
+int main(void) {
+	char str[256];
+	int n;
+
+	printf("문자열? ");
+	scanf_s("%[^\n]", str, 256);
+
+	n = strlen(str);
+	
+	for (int i = 0; i < n; i++) {
+		if (isupper(str[i])) {
+			str[i] = tolower(str[i]);
+		}
+		else if (islower(str[i])) {
+			str[i] = toupper(str[i]);
+		}
+	}
+	printf("변환 후: %s", str);
+}

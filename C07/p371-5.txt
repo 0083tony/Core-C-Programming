@@ -1,0 +1,21 @@
+#include<stdio.h>
+int main(void) {
+	int arr[10]{ 23,45,62,12,99,83,23,50,12,37 };
+	int i, j, n, m;
+	
+	printf("배열: ");
+
+	for (i = 0; i < 10; i++) {
+		printf("%d ", arr[i]);
+	}
+	printf("\n찾을 값? ");
+	scanf_s("%d", &n);
+
+	for (j = 10; j >= 0; --j) {
+		if (arr[j] == n) {
+			m = j + 1;
+			printf("%d 는 %d번째 원소입니다.", n, m);
+			return 0;
+		}		
+	}	
+}

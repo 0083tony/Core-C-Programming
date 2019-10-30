@@ -16,5 +16,8 @@ int main(void) {
 
 	printf("첫 번째 문자열? %s\n", A);
 	printf("두 번째 문자열? %s\n", B);
+
 	printf("%s", join_string(A, B));
+
+	return 0;
 }

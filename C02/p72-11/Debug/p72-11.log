@@ -1,0 +1,3 @@
+﻿  소스.cpp
+C:\Users\0083t\OneDrive\바탕 화면\예제\C02\p72-11\소스.cpp(5,16): warning C4305:  '=': 'double'에서 'float'(으)로 잘립니다.
+  p72-11.vcxproj -> C:\Users\0083t\OneDrive\바탕 화면\예제\C02\p72-11\Debug\p72-11.exe

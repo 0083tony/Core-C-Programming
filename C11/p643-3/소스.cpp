@@ -8,11 +8,10 @@ int fibonacci(int num) {
 	else return fibonacci(num - 1) + fibonacci(num - 2);
 }
 int main(void) {
-	int n;
+	printf("피보나치 수\n");
 
-	printf("피보나치 수를 입력하세요 ");
-	scanf("%d", &n);
-	for (int i = 1; i <= n; i++) {
+	for (int i = 1; i <= 20; i++) {
 		printf("%d ", fibonacci(i));
 	}
+	return 0;
 }

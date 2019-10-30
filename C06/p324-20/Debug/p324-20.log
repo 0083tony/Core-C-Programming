@@ -1,0 +1,4 @@
+﻿  소스.cpp
+C:\Users\0083t\OneDrive\바탕 화면\예제\C06\p324-20\소스.cpp(6,19): warning C4804:  '<=': 연산에 'bool' 형식을 사용하는 것은 안전하지 않습니다.
+C:\Users\0083t\OneDrive\바탕 화면\예제\C06\p324-20\소스.cpp(10,22): warning C4804:  '<': 연산에 'bool' 형식을 사용하는 것은 안전하지 않습니다.
+  p324-20.vcxproj -> C:\Users\0083t\OneDrive\바탕 화면\예제\C06\p324-20\Debug\p324-20.exe

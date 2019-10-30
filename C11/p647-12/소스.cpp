@@ -31,4 +31,6 @@ int main(void) {
 		printf("%d ", AB[i]);
 	}
 	free(AB); // 동적 메모리 할당 해제
+
+	return 0;
 }

@@ -9,9 +9,12 @@ int power(int num, int i) {
 }
 int main(void) {
 	int num;
+
 	printf("นุ(base)? ");
 	scanf("%d", &num);
+
 	for (int i = 0; i < 10; i++) {
 		printf("%d ^ %d = %d\n", num, i, power(num, i));
 	}
+	return 0;
 }

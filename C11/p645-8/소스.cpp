@@ -20,27 +20,35 @@ int main(void) {
 	int num;
 
 	printf("배열을 0부터 1씩 커지는 값으로 채울 때:\n");
+
 	for (int i = 0; i < 10; i++) {
 		func = increment_it;
 		num = Function(i, func);
 		printf("%d ", num);
 	}
+
 	printf("\n배열을 현재 원소보다 1만큼 큰 값으로 채울 때:\n");
+
 	for (int i = 0; i < 10; i++) {
 		func = increase_from_0;
 		num = Function(i, func);
 		printf("%d ", num);
 	}
+
 	printf("\n배열을 현재 원소의 제곱으로 채울 때:\n");
+
 	for (int i = 1; i <= 10; i++) {
 		func = squared;
 		num = Function(i, func);
 		printf("%d ", num);
 	}
+
 	printf("\n배열을 0으로 채울 때:\n");
+
 	for (int i = 0; i < 10; i++) {
 		func = fill_0;
 		num = Function(i, func);
 		printf("%d ", num);
 	}
+	return 0;
 }

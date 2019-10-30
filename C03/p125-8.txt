@@ -1,8 +1,0 @@
-#include<stdio.h>
-int main(void) {
-	float a;
-
-	printf("±Ê¿Ã(yd)? ");
-	scanf_s("%f", &a);
-	printf("%.0f yd = %f m", a, 0.9144 * a);
-}

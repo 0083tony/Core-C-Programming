@@ -1,8 +1,0 @@
-#include<stdio.h>
-int main(void) {
-	int ASCII;
-
-	for (ASCII = 32; ASCII < 127; ASCII++) {
-		printf("%c ", ASCII);
-	}
-}

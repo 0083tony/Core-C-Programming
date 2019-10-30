@@ -14,15 +14,22 @@ int main(void) {
 	{"Bohemian Rhapsody"},
 	{"Insidious"}
 	};
+
 	qsort((void*)MOVIE, 5, sizeof(MOVIE[0]), compare);
+
 	printf("<<영화 목록>>\n");
+
 	for (int i = 0; i < 5; i++) {
 		printf("%s\n", MOVIE[i]);
 	}
+
 	printf("제목? ");
 	scanf_s("%s", key_word, 20);
+
 	char* found = (char*)bsearch(key_word, MOVIE, 5, 20, compare);
+
 	getchar();
+
 	for (int i = 0; i < 5; i++) {
 		if (*found == *MOVIE[i]) {
 			printf("수정할 제목? ");
@@ -33,8 +40,11 @@ int main(void) {
 A:
 	printf("\n");
 	qsort((void*)MOVIE, 5, sizeof(MOVIE[0]), compare);
+
 	printf("<<영화 목록>>\n");
+
 	for (int i = 0; i < 5; i++) {
 		printf("%s\n", MOVIE[i]);
 	}
+	return 0;
 }

@@ -14,7 +14,9 @@ int main(void) {
 
 	printf("피보나치 수를 입력하세요 ");
 	scanf("%d", &n);
+
 	for (int i = 1; i <= n; i++) {
 		printf("%lld ", fibonacci(i));
 	}
+	return 0;
 }

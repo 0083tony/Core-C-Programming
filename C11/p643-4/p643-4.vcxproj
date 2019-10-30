@@ -20,7 +20,7 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
-    <ProjectGuid>{6D27B126-9190-4D37-BDD8-0A93F6BB1FA5}</ProjectGuid>
+    <ProjectGuid>{9B488B1B-380F-43F8-98E6-25ADD7991465}</ProjectGuid>
     <RootNamespace>p6434</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>

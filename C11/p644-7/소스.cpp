@@ -18,19 +18,25 @@ int main(void) {
 	int (*po)(int, int);
 	int num;
 	int result;
+
 	fibo = fibonacci;
 	po = power;
+
 	printf("밑(base)? ");
 	scanf("%d", &num);
+
 	for (int i = 0; i < 10; i++) {
 		result = po(num, i);
 		printf("%d ^ %d = %d\n", num, i, result);
 	}
+
 	printf("\n\n");
 	printf("피보나치 수를 입력하세요 ");
 	scanf("%d", &num);
+
 	for (int i = 1; i <= num; i++) {
 		result = fibo(i);
 		printf("%d ", result);
 	}
+	return 0;
 }
